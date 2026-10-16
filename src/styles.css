@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{font-family:'DM Sans',sans-serif;color:#f6f2e9;background:#090909;font-synthesis:none;text-rendering:optimizeLegibility;--gold:#c8a96a;--gold-light:#e6cf91;--muted:#aaa69b;--line:rgba(200,169,106,.23);--panel:#11110f}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:#090909;color:#f6f2e9}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}.topbar{height:82px;padding:0 6.2%;display:flex;align-items:center;justify-content:space-between;background:rgba(9,9,9,.94);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:blur(18px)}.brand{display:flex;align-items:center;gap:11px}.brand-mark{font-family:'Playfair Display',serif;font-size:42px;line-height:1;color:var(--gold);font-weight:700;letter-spacing:-5px}.brand-mark span{color:#f4ead0}.brand-name{font-size:14px;letter-spacing:3px;font-weight:500;line-height:1.1}.brand-name b{color:var(--gold);font-weight:600}.brand-name small{display:block;font-size:8px;letter-spacing:2.6px;color:#a8a194;margin-top:6px}.nav{display:flex;align-items:center;gap:31px;font-size:12px;color:#d0ccc3}.nav>a:not(.nav-cta){transition:color .25s}.nav>a:not(.nav-cta):hover{color:var(--gold)}.nav-cta{display:flex;align-items:center;gap:9px;padding:12px 16px;border:1px solid var(--gold);color:var(--gold-light);transition:.3s}.nav-cta:hover{background:var(--gold);color:#090909}.menu-toggle{display:none;background:none;border:0;color:var(--gold)}.hero{min-height:690px;height:min(780px,calc(100vh - 82px));position:relative;display:flex;align-items:center;overflow:hidden}.hero-image{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2200&q=90') center 57%/cover;animation:heroZoom 15s ease-in-out infinite alternate}.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,5,.96) 0%,rgba(5,5,5,.83) 35%,rgba(5,5,5,.34) 72%,rgba(5,5,5,.12) 100%),linear-gradient(0deg,#090909 0%,transparent 22%,transparent 80%,rgba(0,0,0,.25))}.hero-content{position:relative;z-index:2;width:min(700px,90%);margin-left:10%;padding:45px 0 20px;animation:fadeUp .9s both}.eyebrow,.section-kicker{font-size:10px;letter-spacing:3px;color:var(--gold);font-weight:600}.eyebrow{display:flex;align-items:center;gap:11px}.eyebrow span{width:28px;height:1px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1,h2{font-family:'Playfair Display',serif;font-weight:500;letter-spacing:-1.6px}h1{font-size:clamp(48px,6.5vw,86px);line-height:1.06;margin:28px 0 23px;max-width:680px}h1 em,h2 em{font-weight:500;color:var(--gold);font-style:italic}.hero-copy{max-width:475px;color:#c7c2b7;line-height:1.9;font-size:14px}.hero-actions{display:flex;gap:14px;align-items:center;margin-top:32px;flex-wrap:wrap}.btn{min-height:49px;padding:0 19px;display:inline-flex;align-items:center;justify-content:center;gap:13px;font-size:12px;font-weight:700;transition:transform .25s,background .25s,border .25s}.btn:hover{transform:translateY(-3px)}.btn-gold{background:var(--gold);color:#111;border:1px solid var(--gold)}.btn-gold:hover{background:var(--gold-light);border-color:var(--gold-light)}.btn-ghost{border:1px solid rgba(255,255,255,.3);color:#f4f0e6}.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}.hero-trust{display:flex;gap:27px;margin-top:58px;flex-wrap:wrap}.hero-trust>div{display:flex;align-items:center;gap:10px}.hero-trust svg{color:var(--gold);width:19px}.hero-trust b,.hero-trust small{display:block}.hero-trust b{font-size:10px;font-weight:600}.hero-trust small{font-size:9px;color:#a7a196;margin-top:5px}.hero-index{position:absolute;right:6%;bottom:45px;font-size:10px;letter-spacing:2px;color:#a8a398}.hero-index span{color:var(--gold)}.hero-index i{display:inline-block;width:55px;height:1px;background:var(--gold);vertical-align:middle;margin-left:14px}.section-pad{padding:110px 9%}.intro{background:#0b0b0a}.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:10%;align-items:end;margin-top:24px}.intro h2,.section-head h2,.service-content h2,.reservation h2,.final-content h2{font-size:clamp(38px,4.5vw,60px);line-height:1.12;margin:0}.intro-text{max-width:470px}.intro-text p,.section-head>p,.service-content>p,.reservation-copy>p{font-size:13px;line-height:1.9;color:#aaa69c}.text-link{display:inline-flex;align-items:center;gap:12px;color:var(--gold);font-size:12px;font-weight:700;background:none;border:0;padding:0;cursor:pointer}.text-link:hover{color:var(--gold-light)}.stats-row{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:65px;padding-top:27px;gap:25px}.stats-row>div{display:flex;align-items:center;gap:16px}.stats-row strong{font-family:'Playfair Display',serif;color:var(--gold);font-size:35px;font-weight:500}.stats-row span{font-size:10px;line-height:1.6;color:#a9a49a;max-width:145px}.fleet{background:#10100e}.section-head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:42px}.section-head h2{margin-top:17px}.section-head>p{max-width:340px;margin:0 0 4px}.car-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}.car-card{border:1px solid rgba(200,169,106,.16);background:#0b0b0a;transition:transform .4s,border-color .4s;transition-delay:var(--delay,0ms)}.car-card:hover{transform:translateY(-6px);border-color:rgba(200,169,106,.55)}.car-photo{height:265px;position:relative;overflow:hidden;background:#181816}.car-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s;filter:saturate(.78)}.car-card:hover .car-photo img{transform:scale(1.06)}.car-tag{position:absolute;left:17px;top:17px;padding:8px 10px;background:rgba(9,9,9,.78);border:1px solid var(--line);font-size:9px;letter-spacing:1px;text-transform:uppercase}.round-arrow{position:absolute;right:16px;bottom:16px;width:39px;height:39px;border:0;background:var(--gold);color:#111;display:grid;place-items:center;cursor:pointer;transition:transform .3s}.round-arrow:hover{transform:rotate(45deg)}.car-info{padding:23px 24px 22px}.car-category{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}.car-info h3{font-family:'Playfair Display',serif;font-size:27px;font-weight:500;margin:9px 0 13px}.car-specs{display:flex;gap:18px;flex-wrap:wrap}.car-specs span{display:flex;align-items:center;gap:7px;color:#aaa69c;font-size:10px}.car-specs svg{color:var(--gold)}.car-info>p{font-size:11px;line-height:1.8;color:#a9a49a;margin:17px 0 20px;min-height:40px}.car-bottom{display:flex;justify-content:space-between;align-items:end;border-top:1px solid var(--line);padding-top:17px}.car-bottom>div>small{display:block;font-size:9px;color:#aaa69c;margin-bottom:5px}.car-bottom strong{font-size:26px;font-weight:500;color:var(--gold);font-family:'Playfair Display',serif}.car-bottom strong small{font-family:'DM Sans',sans-serif;font-size:10px;color:#aaa69c}.price-note{font-size:10px;color:#8e8a80;margin:22px 0 0}.service-band{display:grid;grid-template-columns:1fr 1fr;background:#090909;min-height:650px}.service-photo{min-height:600px;overflow:hidden}.service-photo img{width:100%;height:100%;object-fit:cover;filter:brightness(.68) saturate(.75)}.service-content{padding:90px 12% 80px 10%;align-self:center}.service-content h2{margin:18px 0 23px}.service-content>p{max-width:430px}.service-list{margin:29px 0 32px}.service-list>div{display:flex;gap:13px;padding:14px 0;border-bottom:1px solid var(--line)}.service-list svg{color:var(--gold);width:17px;flex-shrink:0}.service-list b,.service-list small{display:block}.service-list b{font-size:12px;font-weight:600}.service-list small{font-size:10px;color:#a9a49a;margin-top:5px;line-height:1.6}.reservation{display:grid;grid-template-columns:.85fr 1fr;gap:10%;background:#11110f;align-items:center}.reservation h2{margin:18px 0 23px}.reservation-copy>p{max-width:400px}.reservation-note{display:flex;gap:14px;margin-top:34px;max-width:360px}.reservation-note>svg{color:var(--gold);flex-shrink:0}.reservation-note b,.reservation-note small{display:block}.reservation-note b{font-size:12px}.reservation-note small{font-size:10px;color:#aaa69c;line-height:1.7;margin-top:6px}.booking-form{border:1px solid var(--line);padding:30px;background:#090909}.form-title{display:flex;justify-content:space-between;align-items:center;color:var(--gold);font-size:10px;letter-spacing:2px;margin-bottom:25px}.form-title svg{width:23px}.booking-form label{display:block;font-size:10px;color:#c8c3b7;margin-bottom:17px}.booking-form input,.booking-form select{display:block;width:100%;margin-top:9px;min-height:44px;background:#121210;border:1px solid #38352d;color:#eee8da;padding:0 12px;outline:none;border-radius:0;font-size:11px;color-scheme:dark}.booking-form input:focus,.booking-form select:focus{border-color:var(--gold)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form-submit{width:100%;border:0;cursor:pointer;margin-top:3px}.form-legal{font-size:9px;color:#858176;line-height:1.7;margin:14px 0 0}.discover{background:#090909}.destination-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.destination{min-height:280px;display:flex;flex-direction:column;justify-content:end;padding:24px;position:relative;overflow:hidden;background-size:cover;background-position:center;isolation:isolate;transition:transform .3s}.destination:hover{transform:translateY(-5px)}.destination:before{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.92),rgba(0,0,0,.12));z-index:-1}.dest-agadir{background-image:url('/destinations/agadir-centre.jpg')}.dest-taghazout{background-image:url('/destinations/taghazout.jpg')}.dest-aghroud{background-image:url('/destinations/plage-aghroud.jpg')}.destination>span{font-size:9px;letter-spacing:2px;color:var(--gold)}.destination h3{font-family:'Playfair Display',serif;font-size:29px;font-weight:500;margin:10px 0 6px}.destination p{font-size:11px;color:#c5c0b5;margin:0}.destination>svg{position:absolute;right:23px;bottom:25px;color:var(--gold)}.faq{background:#11110f}.faq-list{max-width:850px;margin:0 auto;border-top:1px solid var(--line)}.faq-item{border-bottom:1px solid var(--line)}.faq-item>button{width:100%;background:none;border:0;color:#f1ede4;display:flex;align-items:center;justify-content:space-between;text-align:left;padding:23px 3px;font-size:13px;cursor:pointer}.faq-item>button svg{color:var(--gold);width:17px;transition:transform .3s}.faq-item.active>button svg{transform:rotate(180deg)}.faq-item>p{color:#aaa69c;font-size:12px;line-height:1.9;max-width:760px;padding:0 30px 23px 3px;margin:0}.final-cta{position:relative;min-height:460px;display:grid;place-items:center;text-align:center;overflow:hidden;padding:80px 20px}.final-bg{position:absolute;inset:0;background:linear-gradient(rgba(5,5,5,.8),rgba(5,5,5,.87)),url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=80') center/cover}.final-content{position:relative;max-width:700px}.final-content h2{font-size:clamp(40px,5vw,62px);margin:18px 0}.final-content p{color:#c0baae;font-size:12px;line-height:1.8;margin-bottom:27px}.footer{background:#070707;padding:50px 9% 0;border-top:1px solid var(--line)}.footer-main{display:grid;grid-template-columns:1fr 1fr auto;align-items:center;gap:30px;padding-bottom:40px}.footer-main>p{font-size:11px;color:#a9a49a;margin:0;max-width:250px;line-height:1.8}.footer-wa{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--gold)}.footer-wa svg{width:18px}.footer-bottom{border-top:1px solid var(--line);padding:20px 0;display:flex;justify-content:space-between;gap:20px;color:#888377;font-size:9px}.footer-bottom a{color:var(--gold)}.floating-wa{position:fixed;right:22px;bottom:22px;z-index:40;width:52px;height:52px;background:#c8a96a;color:#10100e;display:grid;place-items:center;box-shadow:0 6px 25px #0008;transition:transform .25s}.floating-wa:hover{transform:translateY(-4px) scale(1.04)}.floating-wa svg{width:23px;height:23px}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes fadeUp{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.07)}}@media(max-width:1000px){.topbar{padding:0 5%}.nav{gap:17px}.section-pad{padding:85px 6%}.hero-content{margin-left:7%}.hero-trust{gap:17px}.service-content{padding:70px 8%}.reservation{gap:6%}.car-photo{height:220px}}@media(max-width:760px){.topbar{height:72px}.brand-mark{font-size:37px}.menu-toggle{display:block;cursor:pointer}.nav{display:none;position:absolute;top:71px;left:0;right:0;padding:22px 6%;background:#0a0a09;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav-open{display:flex}.nav>a:not(.nav-cta){padding:15px 0;border-bottom:1px solid rgba(200,169,106,.12)}.nav-cta{justify-content:center;margin-top:17px}.hero{min-height:720px;height:calc(100svh - 72px);max-height:850px}.hero-image{background-position:62% center}.hero-shade{background:linear-gradient(90deg,rgba(5,5,5,.92),rgba(5,5,5,.5)),linear-gradient(0deg,#090909 0%,transparent 40%)}.hero-content{margin-left:6%;width:88%;padding-top:20px}.eyebrow{font-size:8px;letter-spacing:2px}h1{font-size:clamp(48px,12vw,72px);margin:24px 0 18px}.hero-copy{font-size:12px;max-width:420px}.hero-actions{gap:10px}.btn{font-size:10px;padding:0 14px;min-height:46px}.hero-trust{margin-top:42px;display:grid;gap:13px}.hero-trust small{font-size:9px}.hero-index{bottom:25px}.section-pad{padding:72px 6%}.intro-grid,.reservation{grid-template-columns:1fr;gap:25px}.intro h2,.section-head h2,.service-content h2,.reservation h2{font-size:45px}.stats-row{margin-top:38px;gap:15px}.stats-row>div{display:block}.stats-row strong{font-size:29px;display:block;margin-bottom:8px}.stats-row span{font-size:9px}.section-head{display:block;margin-bottom:30px}.section-head>p{margin-top:18px}.car-grid{grid-template-columns:1fr;gap:17px}.car-photo{height:250px}.car-info{padding:21px}.car-info h3{font-size:25px}.service-band{grid-template-columns:1fr}.service-photo{min-height:280px;height:300px}.service-content{padding:65px 7%}.reservation{gap:35px}.booking-form{padding:23px 18px}.form-row{gap:10px}.booking-form label{font-size:9px}.booking-form input,.booking-form select{font-size:10px;padding:0 8px}.destination-grid{grid-template-columns:1fr}.destination{min-height:250px}.faq-item>button{font-size:12px;gap:20px}.final-cta{min-height:430px}.final-content h2{font-size:43px}.footer{padding:38px 6% 0}.footer-main{grid-template-columns:1fr;gap:20px}.footer-main>p{max-width:330px}.footer-bottom{flex-wrap:wrap;line-height:1.7}.floating-wa{right:15px;bottom:15px;width:48px;height:48px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+.car-color{font-size:10px;color:#c8a96a;margin:-5px 0 13px}.discount-note{display:block!important;color:#e6cf91!important;font-size:10px!important;margin-top:5px}.estimate{border:1px solid rgba(200,169,106,.35);padding:15px;margin:4px 0 17px;background:#11110f}.estimate>div{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:11px;color:#c5c0b5}.estimate b{color:#f5eee0;font-size:12px}.estimate p{font-size:10px;color:#e6cf91;margin:9px 0}.estimate .estimate-total{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}.estimate-total strong{font-family:'Playfair Display',serif;color:var(--gold);font-size:24px;font-weight:500}
+
+.car-color{font-size:10px;color:var(--gold-light);margin-top:-5px;margin-bottom:13px;letter-spacing:.3px}
+.price-estimate{border:1px solid var(--line);padding:14px;margin:2px 0 17px;background:#11110f}
+.price-estimate>div{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:7px 0;border-bottom:1px solid rgba(200,169,106,.12)}
+.price-estimate>div:last-of-type{border-bottom:0}
+.price-estimate span{font-size:10px;color:#aaa69c}
+.price-estimate strong{font-size:12px;color:var(--gold-light)}
+.price-estimate strong small{font-size:9px;color:#aaa69c;font-weight:400}
+.price-estimate p,.date-error{font-size:10px;line-height:1.6;color:var(--gold);margin:8px 0 0}
+@media(max-width:760px){.price-estimate{padding:12px}.car-color{font-size:10px}}
+.discount-note{display:block;font-size:9px;color:var(--gold-light);margin-top:5px;letter-spacing:.1px}
+.estimate{border:1px solid var(--line);padding:14px;margin:2px 0 17px;background:#11110f}
+.estimate>div{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:7px 0;border-bottom:1px solid rgba(200,169,106,.12)}
+.estimate>div:last-of-type{border-bottom:0}
+.estimate span{font-size:10px;color:#aaa69c}
+.estimate b,.estimate strong{font-size:12px;color:var(--gold-light)}
+.estimate p{font-size:10px;line-height:1.6;color:var(--gold);margin:8px 0 0}
+.estimate .estimate-total{padding-top:12px}
+@media(max-width:760px){.estimate{padding:12px}}
+
+.footer-contact{display:flex;align-items:center;flex-wrap:wrap;gap:22px;padding:0 0 26px;color:#b7b0a2;font-size:10px}
+.footer-contact a{display:inline-flex;align-items:center;gap:7px;color:var(--gold)}
+.footer-contact a:hover{color:var(--gold-light)}
+@media(max-width:760px){.footer-contact{gap:14px;flex-direction:column;align-items:flex-start}.footer-contact span{line-height:1.7}}
+
+/* Logo officiel fourni par Ouazag Cars */
+.brand{min-width:0}
+.brand-logo{display:block;width:clamp(165px,19vw,255px);height:56px;object-fit:contain;object-position:left center}
+.footer .brand-logo{width:235px;height:58px}
+@media(max-width:760px){.brand-logo{width:174px;height:48px}.footer .brand-logo{width:205px;height:52px}}
+
+/* Modifications demandées pour Ouazag Cars */
+.brand-logo{display:block;width:clamp(175px,20vw,270px);height:62px;object-fit:contain;object-position:left center}
+.footer .brand-logo{width:235px;height:60px}
+.car-photo{background:#f5f5f3;}
+.car-photo img{object-fit:contain;padding:8px;filter:none;}
+.car-card:hover .car-photo img{transform:scale(1.035)}
+.car-info>p{display:none!important}
+.fleet-more{display:flex;justify-content:center;margin-top:34px}
+.fleet-more .btn{min-width:245px}
+.service-band{display:block;min-height:0;padding:0;background:#090909}
+.service-photo{display:none!important}
+.service-content{max-width:900px;margin:0 auto;padding:90px 8%;}
+.service-content h2{margin:18px 0 28px}
+.service-list{margin-top:0}
+.agency-address{display:inline-flex;align-items:center;gap:7px}
+.agency-address svg{color:var(--gold);flex-shrink:0}
+.fleet-page-nav{display:flex;align-items:center;gap:25px;font-size:12px;color:#d0ccc3}
+.fleet-page-nav>a:not(.nav-cta):hover{color:var(--gold)}
+.all-fleet-page{min-height:70vh;background:#10100e}
+.all-fleet-title{font-size:clamp(42px,6vw,72px);margin:18px 0}
+.all-fleet-intro{max-width:760px;color:#aaa69c;font-size:13px;line-height:1.9;margin-bottom:42px}
+.all-cars-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.all-cars-grid .car-photo{height:280px}
+@media(max-width:760px){
+ .brand-logo{width:175px;height:49px}
+ .footer .brand-logo{width:205px;height:54px}
+ .fleet-page-nav{gap:10px;font-size:10px}
+ .fleet-page-nav .nav-cta{padding:10px 9px;font-size:9px}
+ .all-fleet-page{padding:58px 6%}
+ .all-cars-grid{grid-template-columns:1fr}
+ .all-cars-grid .car-photo{height:245px}
+ .service-content{padding:70px 7%}
+ .agency-address{align-items:flex-start;line-height:1.6}
+}
+
+.language-picker{display:flex;align-items:center;gap:5px;margin-left:16px;color:var(--gold);font-size:11px}.language-picker select{background:#10100e;border:1px solid var(--gold);color:var(--gold-light);padding:8px 5px;font-size:10px;cursor:pointer}.language-picker select:focus{outline:1px solid var(--gold)}@media(max-width:760px){.language-picker{margin-left:auto;margin-right:12px}.topbar{gap:8px}.language-picker select{padding:7px 4px}}[dir="rtl"] .hero-content{margin-left:0;margin-right:10%}[dir="rtl"] .hero-shade{background:linear-gradient(270deg,rgba(5,5,5,.96) 0%,rgba(5,5,5,.83) 35%,rgba(5,5,5,.34) 72%,rgba(5,5,5,.12) 100%),linear-gradient(0deg,#090909 0%,transparent 22%,transparent 80%,rgba(0,0,0,.25))}[dir="rtl"] .car-tag{left:auto;right:17px}[dir="rtl"] .round-arrow{right:auto;left:16px}[dir="rtl"] .language-picker{margin-left:0;margin-right:16px}@media(max-width:760px){[dir="rtl"] .hero-content{margin-right:6%}}
+
+/* Promotion longue durée : accent rouge pour attirer l'attention */
+.discount-note{display:inline-flex!important;align-items:center;gap:5px;width:max-content;max-width:100%;margin-top:9px!important;padding:7px 9px!important;background:#8c6a24!important;border:1px solid #d6b35d!important;border-radius:3px;color:#fff!important;font-size:10px!important;font-weight:700!important;letter-spacing:.1px;line-height:1.35;box-shadow:0 3px 12px rgba(140,106,36,.18)}
+.estimate>p{display:block;padding:9px 10px;background:rgba(140,106,36,.16);border-left:3px solid #d6b35d;color:#f0d58a!important;font-weight:700;line-height:1.5}
+.price-note{color:#f0d58a!important}
+.promo-banner{display:flex;align-items:center;justify-content:center;gap:9px;padding:11px 16px;background:#8c6a24;color:#fff;font-size:12px;font-weight:700;letter-spacing:.25px;text-align:center;border-bottom:1px solid #d6b35d}
+.promo-banner strong{color:#fff;background:#7d111b;padding:3px 7px;border-radius:2px}
+@media(max-width:760px){.discount-note{font-size:9px!important;padding:6px 7px!important;white-space:normal}.promo-banner{font-size:10px;line-height:1.5;flex-wrap:wrap;padding:10px 14px}}
+
+
+/* Vidéo d'accueil fournie par le client */
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;animation:heroZoom 18s ease-in-out infinite alternate;z-index:0}
+.hero-shade{z-index:1}
+.hero-content{z-index:2}
+@media(max-width:760px){.hero-video{object-position:58% center}}
+@media(prefers-reduced-motion:reduce){.hero-video{animation:none}}
+
+
+/* JDL-inspired black and gold layout, adapted for Ouazag Cars */
+.promo-banner{background:#8c6a24;color:#fff;border-color:#d6b35d;text-transform:uppercase;letter-spacing:.6px}
+.promo-banner strong{background:#4d3915;color:#fff}
+.franchise-section{display:grid;grid-template-columns:1.1fr .9fr;gap:7%;align-items:center;background:linear-gradient(120deg,#100706,#090909 65%);border-top:1px solid rgba(200,169,106,.22);border-bottom:1px solid rgba(200,169,106,.22)}
+.franchise-copy h2{font-size:clamp(42px,5vw,64px);line-height:1.05;letter-spacing:-2px;margin:18px 0 20px}
+.franchise-copy h2 em{color:#e6cf91;font-family:'Playfair Display',serif;font-weight:500}
+.franchise-copy>p{color:#aaa69c;font-size:14px;line-height:1.8;max-width:500px}
+.franchise-promo{margin-top:26px;padding:18px 20px;border:1px solid #8c6a24;background:rgba(140,106,36,.13);display:flex;flex-direction:column;align-items:flex-start;gap:6px;border-radius:12px}
+.franchise-promo .promo-label{font-size:10px;letter-spacing:2px;color:#e6cf91;font-weight:800}
+.franchise-promo strong{font-size:clamp(28px,3vw,40px);color:#f0d58a;line-height:1.2}
+.franchise-promo span:last-child{font-size:12px;color:#d5c9c8}
+.franchise-card{padding:30px;border:1px solid rgba(200,169,106,.5);background:linear-gradient(145deg,#160a09,#0d0d0d);border-radius:18px;box-shadow:0 20px 60px rgba(140,106,36,.12)}
+.franchise-card>svg{color:#d6b35d;margin-bottom:18px}
+.franchise-card>span{display:block;font-size:10px;letter-spacing:2px;color:#bcb2b2;font-weight:700}
+.franchise-card>strong{display:block;font-size:clamp(40px,5vw,58px);letter-spacing:-2px;color:#f4f0f0;margin:8px 0 12px}
+.franchise-card>p{font-size:12px;line-height:1.8;color:#aaa0a0;margin-bottom:22px}
+.franchise-card .btn{width:100%;justify-content:center}
+.btn-gold{background:#c8a96a!important;border-color:#c8a96a!important;color:#fff!important}
+.btn-gold:hover{background:#e6cf91!important;color:#fff!important}
+.nav-cta{background:#c8a96a;border-color:#c8a96a;color:#fff}
+.nav-cta:hover{background:#e6cf91;color:#fff}
+@media(max-width:760px){.franchise-section{grid-template-columns:1fr;gap:28px}.franchise-card{padding:24px}.franchise-copy h2{font-size:44px}.promo-banner{font-size:9px;gap:6px}.promo-banner strong{padding:3px 6px}}
+
+
+/* Palette finale noir & gold pour OUAZAG CARS */
+:root{--gold:#c8a96a;--gold-light:#e6cf91;--line:rgba(200,169,106,.23)}
+.discount-note{background:#6e531f!important;border-color:#c8a96a!important;color:#fff3d3!important;box-shadow:0 3px 12px rgba(200,169,106,.15)}
+.estimate>p{background:rgba(200,169,106,.13);border-left-color:#c8a96a;color:#f0d58a!important}
+.price-note{color:#e6cf91!important}
+.promo-banner{background:#8c6a24!important;color:#fff7e4!important;border-color:#c8a96a!important}
+.promo-banner strong{background:#4d3915!important;color:#fff7e4!important}
+.franchise-section{background:linear-gradient(120deg,#171208,#090909 65%);border-color:rgba(200,169,106,.28)}
+.franchise-promo{border-color:#8c6a24;background:rgba(200,169,106,.1)}
+.franchise-promo .promo-label{color:#e6cf91}
+.franchise-promo strong{color:#f0d58a}
+.franchise-card{border-color:rgba(200,169,106,.5);background:linear-gradient(145deg,#191407,#0d0d0d);box-shadow:0 20px 60px rgba(140,106,36,.12)}
+.franchise-card>svg{color:#d6b35d}
+.btn-gold{background:#c8a96a!important;border-color:#c8a96a!important;color:#111!important}
+.btn-gold:hover{background:#e6cf91!important;border-color:#e6cf91!important;color:#111!important}
+.nav-cta{background:#c8a96a;border-color:#c8a96a;color:#111}
+.nav-cta:hover{background:#e6cf91;color:#111}
+
+/* Pages séparées : Découvrir Agadir, services et FAQ */
+.page-nav{display:flex;align-items:center;gap:clamp(10px,1.6vw,25px);font-size:12px;color:#d0ccc3}
+.page-nav>a:not(.nav-cta):hover{color:var(--gold)}
+.standalone-page{min-height:65vh;background:#090909}
+.standalone-hero{padding:100px 9% 85px;background:radial-gradient(ellipse at 80% 10%,rgba(200,169,106,.12),transparent 45%),linear-gradient(130deg,#100f0c,#090909 65%);border-bottom:1px solid var(--line)}
+.standalone-hero h1{font-size:clamp(46px,6vw,76px);margin:22px 0 18px;max-width:850px}
+.standalone-hero>p{max-width:620px;color:#aaa69c;line-height:1.9;font-size:14px;margin-bottom:28px}
+.standalone-content{padding-top:75px;padding-bottom:90px}
+.services-page-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.service-tile{min-height:220px;border:1px solid var(--line);background:linear-gradient(145deg,#12110e,#090909);padding:27px;}
+.service-tile>svg{color:var(--gold);width:25px;height:25px;margin-bottom:22px}
+.service-tile h2{font-family:'DM Sans',sans-serif;font-size:18px;letter-spacing:-.3px;font-weight:700;margin:0 0 12px}
+.service-tile p{color:#aaa69c;font-size:12px;line-height:1.8;margin:0}
+.franchise-amount{display:block;color:var(--gold);font-family:'Playfair Display',serif;font-size:31px;margin:-4px 0 12px}
+.standalone-note{margin-top:45px;padding:35px;border:1px solid var(--line);background:linear-gradient(120deg,rgba(200,169,106,.1),rgba(200,169,106,.015));}
+.standalone-note h2{font-size:clamp(27px,3vw,38px);margin:0 0 13px}
+.standalone-note p{max-width:760px;color:#aaa69c;font-size:12px;line-height:1.9;margin-bottom:22px}
+.fleet-franchise{margin:48px 0 10px;padding:30px;border:1px solid var(--line);background:linear-gradient(110deg,rgba(200,169,106,.12),rgba(200,169,106,.02));display:flex;align-items:center;justify-content:space-between;gap:25px}
+.fleet-franchise h2{font-size:clamp(24px,3vw,36px);margin:12px 0}
+.fleet-franchise h2 em{color:var(--gold);font-style:normal}
+.fleet-franchise p{color:#aaa69c;font-size:12px;margin:0;line-height:1.7}
+/* Footer structuré comme la référence JDL Cars */
+.jdl-footer{padding:58px max(6%,calc((100% - 1200px)/2)) 0;background:#060606;border-top:1px solid var(--line)}
+.footer-columns{display:grid;grid-template-columns:1.25fr 1.05fr 1fr .9fr;gap:clamp(25px,4vw,65px);padding-bottom:48px}
+.footer-about .brand-logo{width:175px;height:52px;object-position:left center;margin-bottom:15px}
+.footer-about p{max-width:300px;color:#aaa69c;font-size:12px;line-height:1.8;margin:0}
+.footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:13px;color:#aaa69c;font-size:12px;line-height:1.65;min-width:0}
+.footer-column h3{font-family:'DM Sans',sans-serif;color:#f5f1e8;font-size:11px;letter-spacing:2px;margin:2px 0 7px;font-weight:700}
+.footer-column a{transition:color .2s;overflow-wrap:anywhere}
+.footer-column a:hover{color:var(--gold)}
+.footer-column strong{color:#f5f1e8;font-size:11px}
+.footer-links{display:grid;grid-template-columns:1fr 1fr;align-content:start;column-gap:16px;row-gap:13px}
+.footer-links h3{grid-column:1/-1}
+.footer-social p{font-size:11px;line-height:1.7;margin:2px 0 0;color:#aaa69c}
+.social-pill{display:inline-flex;align-items:center;gap:9px;padding:10px 13px;border:1px solid rgba(200,169,106,.22);border-radius:30px;color:#f4eee2}
+.footer-column .footer-wa{display:inline-flex;align-items:center;gap:8px;color:var(--gold-light);font-size:11px}
+.jdl-footer .footer-bottom{border-top:1px solid rgba(200,169,106,.17);padding:21px 0;display:flex;justify-content:space-between;gap:20px;color:#8e897e;font-size:10px}
+@media(max-width:1000px){.page-nav{gap:12px;font-size:10px}.footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px}.services-page-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.page-topbar{height:auto;min-height:72px;align-items:center;padding:8px 5%;flex-wrap:wrap}.page-nav{width:100%;padding:8px 0 10px;display:flex;flex-wrap:wrap;gap:9px 16px;font-size:11px}.page-nav .nav-cta{padding:9px 11px}.standalone-hero{padding:72px 6% 62px}.standalone-hero h1{font-size:clamp(42px,12vw,62px)}.standalone-content{padding:55px 6% 65px}.services-page-grid{grid-template-columns:1fr}.service-tile{min-height:0}.standalone-note{padding:24px}.fleet-franchise{padding:23px;align-items:flex-start;flex-direction:column}.footer-columns{grid-template-columns:1fr;gap:29px;padding-bottom:35px}.footer-about p{max-width:360px}.footer-links{max-width:400px}.jdl-footer{padding:40px 6% 0}.jdl-footer .footer-bottom{flex-direction:column;gap:8px}.destination-grid{grid-template-columns:1fr}}
+
+
+/* Témoignages clients — palette noir & gold */
+.testimonials{background:#090909;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.testimonial-head{align-items:end}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:35px}
+.testimonial-card{border:1px solid rgba(200,169,106,.22);background:linear-gradient(145deg,#14130f,#090909);padding:27px;min-height:230px;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
+.testimonial-card:hover{transform:translateY(-4px);border-color:var(--gold)}
+.testimonial-stars{letter-spacing:4px;color:var(--gold);font-size:15px;margin-bottom:17px}
+.testimonial-card>p{color:#d0c9bb;font-size:12px;line-height:1.9;margin:0 0 24px;flex:1}
+.testimonial-person{display:flex;align-items:center;gap:12px;border-top:1px solid rgba(200,169,106,.14);padding-top:17px}
+.testimonial-avatar{width:36px;height:36px;border:1px solid rgba(200,169,106,.45);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:'Playfair Display',serif;font-size:16px}
+.testimonial-person strong,.testimonial-person small{display:block}
+.testimonial-person strong{font-size:11px;color:#f5f1e8}
+.testimonial-person small{font-size:9px;color:#918a7d;margin-top:4px;line-height:1.5}
+.testimonial-cta{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:30px;color:#c7c0b2;font-size:12px}
+@media(max-width:760px){.testimonial-grid{grid-template-columns:1fr;gap:13px}.testimonial-card{min-height:0;padding:23px}.testimonial-cta{flex-direction:column;gap:14px;text-align:center}.testimonial-head{display:block}}
