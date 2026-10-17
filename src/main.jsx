@@ -8,14 +8,14 @@ import './styles.css';
 const WHATSAPP_NUMBER = '212662839966';
 
 const cars = [
-  { name: 'Hyundai Accent 2025', color: 'Gris', category: 'Berline · Confort', price: 350, gearbox: 'Automatique', fuel: 'Essence', seats: 5, image: '/cars/accent-gris.png', description: '' },
-  { name: 'Dacia Logan', color: 'Gris Nardo', category: 'Berline · Économique', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/logan-gris-nardo.png', description: '' },
-  { name: 'Dacia Sandero Stepway', color: 'Kaki', category: 'Citadine · Stepway', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/stepway-kaki.png', description: '' },
-  { name: 'Renault Clio 5', color: 'Gris foncé', category: 'Citadine · Économique', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/clio-gris.png', description: '' },
-  { name: 'Hyundai Accent 2025', color: 'Noir', category: 'Berline · Confort', price: 350, gearbox: 'Automatique', fuel: 'Essence', seats: 5, image: '/cars/accent-noir.png', description: '' },
-  { name: 'Dacia Logan', color: 'Noir', category: 'Berline · Économique', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/logan-noir.png', description: '' },
-  { name: 'Dacia Sandero Stepway', color: 'Blanc', category: 'Citadine · Stepway', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/stepway-blanc.png', description: '' },
-  { name: 'Dacia Sandero Stepway', color: 'Gris argenté', category: 'Citadine · Stepway', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/stepway-argent.png', description: '' }
+  { name: 'Hyundai Accent 2025', color: 'Gris', category: 'Berline · Confort', price: 350, gearbox: 'Automatique', fuel: 'Essence', seats: 5, image: '/cars/accent-gris.webp', description: '' },
+  { name: 'Dacia Logan', color: 'Gris Nardo', category: 'Berline · Économique', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/logan-gris-nardo.webp', description: '' },
+  { name: 'Dacia Sandero Stepway', color: 'Kaki', category: 'Citadine · Stepway', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/stepway-kaki.webp', description: '' },
+  { name: 'Renault Clio 5', color: 'Gris foncé', category: 'Citadine · Économique', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/clio-gris.webp', description: '' },
+  { name: 'Hyundai Accent 2025', color: 'Noir', category: 'Berline · Confort', price: 350, gearbox: 'Automatique', fuel: 'Essence', seats: 5, image: '/cars/accent-noir.webp', description: '' },
+  { name: 'Dacia Logan', color: 'Noir', category: 'Berline · Économique', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/logan-noir.webp', description: '' },
+  { name: 'Dacia Sandero Streetway', color: 'Blanc', category: 'Citadine · Économique', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/stepway-blanc.webp', description: '' },
+  { name: 'Dacia Sandero Stepway', color: 'Gris argenté', category: 'Citadine · Stepway', price: 300, gearbox: 'Manuelle', fuel: 'Diesel', seats: 5, image: '/cars/stepway-argent.webp', description: '' }
 ];
 const featuredCars = cars.slice(0, 4);
 
@@ -206,7 +206,7 @@ function App() {
 
       <main dir={lang === 'ar' ? 'rtl' : 'ltr'}>
         <section className="hero" id="home">
-          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster="/cars/accent-gris.png" aria-hidden="true">
+          <video className="hero-video" autoPlay muted loop playsInline preload="metadata" poster="/cars/accent-gris.webp" aria-hidden="true">
             <source src="/ouazagcars-hero.mp4" type="video/mp4" />
           </video>
           <div className="hero-shade" />
@@ -259,26 +259,41 @@ function App() {
         <section className="testimonials section-pad reveal" id="temoignages">
           <div className="section-head testimonial-head">
             <div><div className="section-kicker">VOTRE CONFIANCE COMPTE</div><h2>Ils parlent de <em>leur expérience.</em></h2></div>
-            <p>La qualité du service se construit avec chaque voyage et chaque retour client.</p>
+            <p>Exemples de présentation à remplacer par les avis authentiques de vos clients.</p>
           </div>
           <div className="testimonial-grid">
             <article className="testimonial-card">
-              <div className="testimonial-stars" aria-label="Exemple de note 5 étoiles">★★★★★</div>
-              <p>« Réservation simple et réponse rapide sur WhatsApp. La voiture était propre et prête à l’heure convenue. »</p>
-              <div className="testimonial-person"><span className="testimonial-avatar">M</span><span><strong>Client — exemple</strong><small>Avis illustratif à confirmer</small></span></div>
+            <div className="testimonial-person"><span className="testimonial-avatar">KB</span><span><strong>Karim B.</strong><small>Maroc · Dacia Sandero Streetway blanche</small></span></div>
+              <div className="testimonial-topline"><div className="testimonial-stars" aria-label="Exemple de note 5 étoiles">★★★★★</div></div>
+              <p>« Livraison à l’aéroport AGA à l’heure. La Dacia Sandero Streetway était propre et confortable, et le tarif annoncé a été respecté. »</p>
             </article>
             <article className="testimonial-card">
-              <div className="testimonial-stars" aria-label="Exemple de note 5 étoiles">★★★★★</div>
-              <p>« Accueil agréable à Agadir et prise en charge facile. Les informations sur le prix étaient claires dès le départ. »</p>
-              <div className="testimonial-person"><span className="testimonial-avatar">S</span><span><strong>Client — exemple</strong><small>Avis illustratif à confirmer</small></span></div>
+              <div className="testimonial-person"><span className="testimonial-avatar">SL</span><span><strong>Sophie L.</strong><small>France · Renault Clio 5</small></span></div>
+              <div className="testimonial-topline"><div className="testimonial-stars" aria-label="Exemple de note 5 étoiles">★★★★★</div></div>
+              <p>« Très bonne communication sur WhatsApp et récupération facile de la voiture. La Clio était propre et idéale pour visiter Agadir. »</p>
             </article>
             <article className="testimonial-card">
-              <div className="testimonial-stars" aria-label="Exemple de note 5 étoiles">★★★★★</div>
-              <p>« Très pratique pour se déplacer pendant le séjour. Communication fluide et restitution du véhicule sans complication. »</p>
-              <div className="testimonial-person"><span className="testimonial-avatar">A</span><span><strong>Client — exemple</strong><small>Avis illustratif à confirmer</small></span></div>
+                <div className="testimonial-person"><span className="testimonial-avatar">JM</span><span><strong>Javier M.</strong><small>Espagne · Hyundai Accent 2025</small></span></div>
+              <div className="testimonial-topline"><div className="testimonial-stars" aria-label="Exemple de note 5 étoiles">★★★★★</div></div>
+              <p>« La voiture était prête à notre arrivée. Explications claires, prise en charge simple et très pratique pour notre séjour à Agadir. »</p>
+            </article>
+            <article className="testimonial-card">
+              <div className="testimonial-person"><span className="testimonial-avatar">YE</span><span><strong>Youssef E.</strong><small>Maroc · Dacia Logan</small></span></div>
+              <div className="testimonial-topline"><div className="testimonial-stars" aria-label="Exemple de note 5 étoiles">★★★★★</div></div>
+              <p>« Service sérieux et prix expliqué dès le début. La Dacia Logan était économique et adaptée aux déplacements en ville. »</p>
+            </article>
+            <article className="testimonial-card">
+              <div className="testimonial-person"><span className="testimonial-avatar">LK</span><span><strong>Lena K.</strong><small>Allemagne · Renault Clio 5</small></span></div>
+              <div className="testimonial-topline"><div className="testimonial-stars" aria-label="Exemple de note 5 étoiles">★★★★★</div></div>
+              <p>« Réservation facile et restitution sans complication. Nous avons apprécié la disponibilité de l’équipe pendant le séjour. »</p>
+            </article>
+            <article className="testimonial-card">
+              <div className="testimonial-person"><span className="testimonial-avatar">OP</span><span><strong>Oliver P.</strong><small>Royaume-Uni · Hyundai Accent 2025</small></span></div>
+              <div className="testimonial-topline"><div className="testimonial-stars" aria-label="Exemple de note 5 étoiles">★★★★★</div></div>
+              <p>« La Hyundai Accent était confortable pour les trajets. Réponses rapides et informations pratiques avant la prise en charge. »</p>
             </article>
           </div>
-          <div className="testimonial-cta"><span>Vous avez déjà loué avec nous ?</span><a className="btn btn-gold" href={waLink('Bonjour Ouazag Cars, je souhaite partager mon avis sur mon expérience de location.')} target="_blank" rel="noreferrer"><MessageCircle size={17}/> Partager mon avis</a></div>
+          <div className="testimonial-cta"><span>Vous avez déjà loué avec nous ?</span><a className="btn btn-gold" href={waLink('Bonjour Ouazag Cars, je souhaite partager mon avis réel sur mon expérience de location.')} target="_blank" rel="noreferrer"><MessageCircle size={17}/> Partager mon avis</a></div>
         </section>
 
         <section className="reservation section-pad" id="reservation">
